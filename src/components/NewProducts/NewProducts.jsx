@@ -1,6 +1,5 @@
 import React from 'react'
 import { addDoc, collection,getFirestore } from 'firebase/firestore';
-import "./NewProducts.css"
 
 const NewProducts = () => {
 
@@ -53,7 +52,7 @@ const NewProducts = () => {
         addDoc(newProductsCollection,newProducts).then(({id})=>console.log(id))
     }
   return (
-    <div>
+    <div className='inputs'>
         <input type="text" onChange={(e)=> handleCategoryChange(e)} placeholder='Categoria'/>
         <input type="text" onChange={(e)=> handleDescriptionChange(e)} placeholder="Descripcion"/>
         <input type="text" onChange={(e)=> handleImagesChange(e)} placeholder='Imagen' />
@@ -61,7 +60,7 @@ const NewProducts = () => {
         <input type="text" onChange={(e)=> handleTitleChange(e)} placeholder='Titulo' />
         <input type="number" onChange={(e)=> handlePreviusChange(e)} placeholder='Precio Previo' />
         <input type="number" onChange={(e)=> handlePriceChange(e)} placeholder='Precio' />
-        <button onClick={handelSubmit}>Agregar producto nuevo</button>
+        <button className='buttonModify' onClick={handelSubmit}>Agregar Producto</button>
     </div>
   )
 }

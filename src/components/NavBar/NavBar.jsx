@@ -20,6 +20,7 @@ const NavBar = () => {
                 <Nav className="me-auto">
                 <Link to="/" className='enlaces'>Home</Link>
                 <Link className='enlaces' to="/products">Productos</Link>
+                <Link className='enlaces' to="/createProducts">Crear Productos</Link>
                     <NavDropdown title="Categorias" className='enlacesDes' id="basic-nav-dropdown">
                         <NavDropdown.Item><Link className='enlaces' to="/category/Smartphones">Smartphones</Link></NavDropdown.Item>
                         <NavDropdown.Item><Link className='enlaces' to="/category/Notebooks">Notebooks</Link></NavDropdown.Item>
