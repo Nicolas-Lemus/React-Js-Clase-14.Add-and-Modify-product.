@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
 import { useParams } from 'react-router-dom';
-import DotSpinner from '../Animations/DotSpinner ';
+import DotSpinner from '../animations/DotSpinner ';
 
 
 import {collection,getDocs,getFirestore} from "firebase/firestore"

@@ -2,8 +2,7 @@ import React, {useState ,useEffect } from 'react'
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
 import {collection,getDocs,getFirestore} from "firebase/firestore"
 import Headers from '../components/Headers/Headers';
-import DotSpinner from '../Animations/DotSpinner ';
-
+import DotSpinner from '../animations/DotSpinner ';
 
 
 const Products = () => {
