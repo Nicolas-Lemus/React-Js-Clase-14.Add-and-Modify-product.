@@ -18,7 +18,6 @@
     flex-wrap: wrap;
     justify-content: center;
 } 
-
 .Card{
     display: flex;
     flex-direction: column;
@@ -82,4 +81,26 @@
 .Stock{
     padding-top:2rem;
     text-decoration:underline;
+}
+.Modify{
+    border-radius: 8px;
+    margin-top: 1rem;
+    background: green;
+    border: 1px solid green;
+    padding: .2rem;
+}
+.Modify:hover{
+    background: rgba(75, 174, 21, 0.826);
+    border-color: none !important;
+}
+.Modify a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    background: rgb(0, 128, 0);
+}
+.Modify a:hover{
+        background: rgba(75, 174, 21, 0.487);
+        color: rgb(0, 0, 0);
+        border-color: none !important;
 }

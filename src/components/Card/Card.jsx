@@ -2,6 +2,7 @@ import './Card.css';
 import { Link } from 'react-router-dom';
 import CardButtons from '../CardButtons/CardButtons';
 
+
 const Card = ({productsData}) => {
   
   return (
@@ -16,7 +17,7 @@ const Card = ({productsData}) => {
             <div className='Price'>${productsData.price}</div>
             <div className='Stock'>{productsData.stock}</div>
             <CardButtons/>
-            <button className='Modificar'>
+            <button className="Modify">
               <Link to={`/updateProducts/${productsData.id}`}>Modificar Producto</Link> 
             </button>
         </div>
